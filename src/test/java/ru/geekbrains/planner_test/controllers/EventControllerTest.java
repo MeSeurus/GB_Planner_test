@@ -128,4 +128,20 @@ public class EventControllerTest {
                 .andExpect(status().isOk());
 
     }
+
+    @Test
+    @Order(6)
+    public void exceptionWhenDeleteEventByIdFailedTest() throws Exception {
+
+        mockMvc
+                .perform(
+                        delete("/api/v1/event/1")
+                                .contentType(MediaType.APPLICATION_JSON)
+                                .content(mapper.writeValueAsString(buildEventDto()))
+                                .accept(MediaType.APPLICATION_JSON))
+                .andDo(print())
+                .andExpect(status().isNotFound())
+                .andExpect(jsonPath("message", is("Event with id = " + 1 + " not found for delete")));
+
+    }
 }
