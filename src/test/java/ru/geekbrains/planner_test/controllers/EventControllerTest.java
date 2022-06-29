@@ -121,9 +121,7 @@ public class EventControllerTest {
         mockMvc
                 .perform(
                         delete("/api/v1/event/1")
-                                .contentType(MediaType.APPLICATION_JSON)
-                                .content(mapper.writeValueAsString(buildEventDto()))
-                                .accept(MediaType.APPLICATION_JSON))
+                                .contentType(MediaType.APPLICATION_JSON))
                 .andDo(print())
                 .andExpect(status().isOk());
 
@@ -136,9 +134,7 @@ public class EventControllerTest {
         mockMvc
                 .perform(
                         delete("/api/v1/event/1")
-                                .contentType(MediaType.APPLICATION_JSON)
-                                .content(mapper.writeValueAsString(buildEventDto()))
-                                .accept(MediaType.APPLICATION_JSON))
+                                .contentType(MediaType.APPLICATION_JSON))
                 .andDo(print())
                 .andExpect(status().isNotFound())
                 .andExpect(jsonPath("message", is("Event with id = " + 1 + " not found for delete")));
