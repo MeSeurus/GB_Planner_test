@@ -1,8 +1,9 @@
-package ru.geekbrains.planner_test.dto;
-import lombok.*;
-import ru.geekbrains.planner_test.entity.Event;
-import java.sql.Timestamp;
+package ru.geekbrains.planner_test.dtos;
 
+import lombok.*;
+import ru.geekbrains.planner_test.entitys.Event;
+
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -13,8 +14,8 @@ public class EventDto {
 
     private Long id;
     private String title;
-    private Timestamp eventStart;
-    private Timestamp eventEnd;
+    private LocalDateTime eventStart;
+    private LocalDateTime eventEnd;
 
     public EventDto(Event event) {
         this.id = event.getId();

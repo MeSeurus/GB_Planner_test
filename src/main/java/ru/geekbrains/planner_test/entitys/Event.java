@@ -1,5 +1,4 @@
-package ru.geekbrains.planner_test.entity;
-
+package ru.geekbrains.planner_test.entitys;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -7,7 +6,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @Entity
 @NoArgsConstructor
@@ -26,9 +25,9 @@ public class Event {
     private String title;
 
     @Column(name = "event_start")
-    private Timestamp eventStart;
+    private LocalDateTime eventStart;
 
     @Column(name = "event_end")
-    private Timestamp eventEnd;
+    private LocalDateTime eventEnd;
 
 }
