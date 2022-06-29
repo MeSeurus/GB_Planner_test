@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.geekbrains.planner_test.daos.EventDao;
 import ru.geekbrains.planner_test.dtos.EventDto;
-import ru.geekbrains.planner_test.entitys.Event;
+import ru.geekbrains.planner_test.entities.Event;
 import ru.geekbrains.planner_test.exceptions.EventNotFoundException;
 
 import java.util.List;

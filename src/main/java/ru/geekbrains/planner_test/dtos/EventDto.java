@@ -1,7 +1,7 @@
 package ru.geekbrains.planner_test.dtos;
 
 import lombok.*;
-import ru.geekbrains.planner_test.entitys.Event;
+import ru.geekbrains.planner_test.entities.Event;
 
 import java.time.LocalDateTime;
 

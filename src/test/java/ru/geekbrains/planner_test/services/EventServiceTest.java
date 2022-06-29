@@ -9,7 +9,6 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.ActiveProfiles;
 import ru.geekbrains.planner_test.daos.EventDao;
 import ru.geekbrains.planner_test.dtos.EventDto;
-import ru.geekbrains.planner_test.entitys.Event;
 
 import java.time.LocalDateTime;
 
