@@ -1,4 +1,4 @@
-package ru.geekbrains.planner_test.stortor.pets;
+package ru.geekbrains.planner_test.dtos;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

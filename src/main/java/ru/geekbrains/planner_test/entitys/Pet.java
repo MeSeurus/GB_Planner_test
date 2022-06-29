@@ -1,4 +1,4 @@
-package ru.geekbrains.planner_test.stortor.pets;
+package ru.geekbrains.planner_test.entitys;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,7 +13,7 @@ import javax.persistence.*;
 @Data
 public class Pet {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 
