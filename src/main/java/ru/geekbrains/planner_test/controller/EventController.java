@@ -1,11 +1,11 @@
-package ru.geekbrains.planner_test.controllers;
+package ru.geekbrains.planner_test.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ru.geekbrains.planner_test.dtos.EventDto;
-import ru.geekbrains.planner_test.services.EventService;
+import ru.geekbrains.planner_test.dto.EventDto;
+import ru.geekbrains.planner_test.service.EventService;
 
 import java.util.List;
 

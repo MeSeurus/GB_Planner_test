@@ -1,4 +1,4 @@
-package ru.geekbrains.planner_test.exceptions;
+package ru.geekbrains.planner_test.exception;
 
 
 public class EventNotFoundException extends RuntimeException {

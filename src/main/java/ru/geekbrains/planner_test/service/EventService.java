@@ -1,13 +1,13 @@
-package ru.geekbrains.planner_test.services;
+package ru.geekbrains.planner_test.service;
 
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.geekbrains.planner_test.daos.EventDao;
-import ru.geekbrains.planner_test.dtos.EventDto;
-import ru.geekbrains.planner_test.entities.Event;
-import ru.geekbrains.planner_test.exceptions.EventNotFoundException;
+import ru.geekbrains.planner_test.dao.EventDao;
+import ru.geekbrains.planner_test.dto.EventDto;
+import ru.geekbrains.planner_test.entity.Event;
+import ru.geekbrains.planner_test.exception.EventNotFoundException;
 
 import java.util.List;
 import java.util.stream.Collectors;

@@ -1,4 +1,4 @@
-package ru.geekbrains.planner_test.controllers;
+package ru.geekbrains.planner_test.controller;
 
 
 import lombok.extern.slf4j.Slf4j;
@@ -6,8 +6,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import ru.geekbrains.planner_test.exceptions.EventException;
-import ru.geekbrains.planner_test.exceptions.EventNotFoundException;
+import ru.geekbrains.planner_test.exception.EventException;
+import ru.geekbrains.planner_test.exception.EventNotFoundException;
 
 @ControllerAdvice
 @Slf4j

@@ -1,4 +1,4 @@
-package ru.geekbrains.planner_test.services;
+package ru.geekbrains.planner_test.service;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentMatchers;
@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.ActiveProfiles;
-import ru.geekbrains.planner_test.daos.EventDao;
-import ru.geekbrains.planner_test.dtos.EventDto;
+import ru.geekbrains.planner_test.dao.EventDao;
+import ru.geekbrains.planner_test.dto.EventDto;
 
 import java.time.LocalDateTime;
 
