@@ -1,4 +1,4 @@
-package ru.geekbrains.planner_test.dtos;
+package ru.geekbrains.planner_test.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
