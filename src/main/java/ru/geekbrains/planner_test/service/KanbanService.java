@@ -10,7 +10,6 @@ import java.util.List;
 @Slf4j
 public class KanbanService {
 
-    @Autowired
     private KanbanRepository repository;
 
     public List<KanbanEntity> findAll() {

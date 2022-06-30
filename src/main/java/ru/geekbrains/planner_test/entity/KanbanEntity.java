@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Data
+@Entity
 @NoArgsConstructor
 @Table(name = "kanban")
 public class KanbanEntity {

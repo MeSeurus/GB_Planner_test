@@ -12,29 +12,28 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/kanban")
 public class KanbanController {
 
-    @Autowired
     private KanbanRepository kanbanRepository;
 
-    @GetMapping("/kanban")
+    @GetMapping
     public List<KanbanEntity> getAllKanbanEntity() {
         return kanbanRepository.findAll();
     }
 
-    @PostMapping("/kanban")
+    @PostMapping
     public KanbanEntity createKanbanEntity(@RequestBody KanbanEntity kanban) {
         return kanbanRepository.save(kanban);
     }
-    @GetMapping("/kanban/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<KanbanEntity> getElectricsById(@PathVariable Long id) {
         KanbanEntity kanban = kanbanRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Not exist with id: " + id));
         return ResponseEntity.ok(kanban);
     }
 
-    @PutMapping("/kanban/{id}")
+    @PutMapping("/{id}")
     public ResponseEntity<KanbanEntity> updateKanbanEntity(@PathVariable Long id, @RequestBody KanbanEntity kanbanUpdate) {
         KanbanEntity kanban = kanbanRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Not exist with id: " + id));
@@ -49,7 +48,7 @@ public class KanbanController {
 
     }
 
-    @DeleteMapping("/kanban/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<Map<String, Boolean>> deleteKanbanEntity(@PathVariable Long id) {
         KanbanEntity kanban = kanbanRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Not exist with id: " + id));
