@@ -1,9 +1,9 @@
-package ru.geekbrains.planner_test.controllers;
+package ru.geekbrains.planner_test.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import ru.geekbrains.planner_test.entities.CalendarDay;
-import ru.geekbrains.planner_test.services.CalendarDayService;
+import ru.geekbrains.planner_test.entitiy.CalendarDay;
+import ru.geekbrains.planner_test.service.CalendarDayService;
 
 import java.util.List;
 

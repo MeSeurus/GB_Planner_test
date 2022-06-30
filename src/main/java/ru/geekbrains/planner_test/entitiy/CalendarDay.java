@@ -1,4 +1,4 @@
-package ru.geekbrains.planner_test.entities;
+package ru.geekbrains.planner_test.entitiy;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
