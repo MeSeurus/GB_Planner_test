@@ -1,25 +1,20 @@
 server:
-  port: 8181
+  port: 8189
   servlet:
-    context-path: /gb-planner
+    context-path: /app
 spring:
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/gb_planner_db
-    username: admin
-    password: admin
+  datasourse:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:mydatabase;MODE=PostgreSQL
+    username: sa
+    password:
   jpa:
     show-sql: true
-    properties:
+    properies:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-        ddl-auto: create-drop
+        dialect: org.hibernate.dialect.H2Dialect
   h2:
     console:
       enabled: true
       settings:
         web-allow-others: false
-  flyway:
-    enabled: true
-    validate-on-migrate: true
-
