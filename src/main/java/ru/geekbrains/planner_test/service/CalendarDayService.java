@@ -2,7 +2,7 @@ package ru.geekbrains.planner_test.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import ru.geekbrains.planner_test.entitiy.CalendarDay;
+import ru.geekbrains.planner_test.entity.CalendarDay;
 import ru.geekbrains.planner_test.repository.CalendarDayRepository;
 
 import java.util.*;
